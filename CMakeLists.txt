@@ -18,8 +18,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 find_package(Eigen3 REQUIRED)
 
 include_directories(
-  ${PROJECT_SOURCE_DIR}/src
   ${EIGEN3_INCLUDE_DIR}
 )
 
-add_subdirectory(src)
+add_executable(example example.cpp)

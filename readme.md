@@ -25,14 +25,11 @@ make
 <summary>Verbose warning</summary>
 
 ```
-Scanning dependencies of target example
-[ 50%] Building CXX object src/CMakeFiles/example.dir/example.cpp.o
+[ 50%] Building CXX object CMakeFiles/example.dir/example.cpp.o
 In file included from /usr/include/eigen3/Eigen/Core:349:0,
-                 from /usr/include/eigen3/Eigen/StdVector:14,
-                 from /home/igor/Code/eigen_example/src/test_lib.h:7,
-                 from /home/igor/Code/eigen_example/src/example.cpp:5:
+                 from /home/igor/Code/eigen_example/example.cpp:3:
 In function ‘void* Eigen::internal::aligned_malloc(std::size_t)’,
-    inlined from ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {int&, int&, int&}; _Tp = Eigen::Matrix<float, 3, 1>; _Alloc = Eigen::aligned_allocator<Eigen::Matrix<float, 3, 1> >]’ at /usr/include/eigen3/Eigen/src/Core/util/Memory.h:742:76:
+    inlined from ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {float, float, float}; _Tp = Eigen::Matrix<float, 3, 1>; _Alloc = Eigen::aligned_allocator<Eigen::Matrix<float, 3, 1> >]’ at /usr/include/eigen3/Eigen/src/Core/util/Memory.h:742:76:
 /usr/include/eigen3/Eigen/src/Core/util/Memory.h:159:12: warning: argument 1 value ‘18446744073709551612’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
      result = std::malloc(size);
      ~~~~~~~^~~~~~~~~~~~~~~~~~~
@@ -40,19 +37,15 @@ In file included from /usr/include/c++/7/bits/std_abs.h:38:0,
                  from /usr/include/c++/7/cmath:47,
                  from /usr/include/c++/7/complex:44,
                  from /usr/include/eigen3/Eigen/Core:80,
-                 from /usr/include/eigen3/Eigen/StdVector:14,
-                 from /home/igor/Code/eigen_example/src/test_lib.h:7,
-                 from /home/igor/Code/eigen_example/src/example.cpp:5:
-/usr/include/stdlib.h: In member function ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {int&, int&, int&}; _Tp = Eigen::Matrix<float, 3, 1>; _Alloc = Eigen::aligned_allocator<Eigen::Matrix<float, 3, 1> >]’:
+                 from /home/igor/Code/eigen_example/example.cpp:3:
+/usr/include/stdlib.h: In member function ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {float, float, float}; _Tp = Eigen::Matrix<float, 3, 1>; _Alloc = Eigen::aligned_allocator<Eigen::Matrix<float, 3, 1> >]’:
 /usr/include/stdlib.h:539:14: note: in a call to allocation function ‘void* malloc(size_t)’ declared here
  extern void *malloc (size_t __size) __THROW __attribute_malloc__ __wur;
               ^~~~~~
 In file included from /usr/include/eigen3/Eigen/Core:349:0,
-                 from /usr/include/eigen3/Eigen/StdVector:14,
-                 from /home/igor/Code/eigen_example/src/test_lib.h:7,
-                 from /home/igor/Code/eigen_example/src/example.cpp:5:
+                 from /home/igor/Code/eigen_example/example.cpp:3:
 In function ‘void* Eigen::internal::aligned_malloc(std::size_t)’,
-    inlined from ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {int&, int&, int&}; _Tp = Eigen::Matrix<float, 3, 1>; _Alloc = Eigen::aligned_allocator<Eigen::Matrix<float, 3, 1> >]’ at /usr/include/eigen3/Eigen/src/Core/util/Memory.h:742:76:
+    inlined from ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {float, float, float}; _Tp = Eigen::Matrix<float, 3, 1>; _Alloc = Eigen::aligned_allocator<Eigen::Matrix<float, 3, 1> >]’ at /usr/include/eigen3/Eigen/src/Core/util/Memory.h:742:76:
 /usr/include/eigen3/Eigen/src/Core/util/Memory.h:159:12: warning: argument 1 value ‘18446744073709551612’ exceeds maximum object size 9223372036854775807 [-Walloc-size-larger-than=]
      result = std::malloc(size);
      ~~~~~~~^~~~~~~~~~~~~~~~~~~
@@ -60,10 +53,8 @@ In file included from /usr/include/c++/7/bits/std_abs.h:38:0,
                  from /usr/include/c++/7/cmath:47,
                  from /usr/include/c++/7/complex:44,
                  from /usr/include/eigen3/Eigen/Core:80,
-                 from /usr/include/eigen3/Eigen/StdVector:14,
-                 from /home/igor/Code/eigen_example/src/test_lib.h:7,
-                 from /home/igor/Code/eigen_example/src/example.cpp:5:
-/usr/include/stdlib.h: In member function ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {int&, int&, int&}; _Tp = Eigen::Matrix<float, 3, 1>; _Alloc = Eigen::aligned_allocator<Eigen::Matrix<float, 3, 1> >]’:
+                 from /home/igor/Code/eigen_example/example.cpp:3:
+/usr/include/stdlib.h: In member function ‘void std::vector<_Tp, _Alloc>::_M_realloc_insert(std::vector<_Tp, _Alloc>::iterator, _Args&& ...) [with _Args = {float, float, float}; _Tp = Eigen::Matrix<float, 3, 1>; _Alloc = Eigen::aligned_allocator<Eigen::Matrix<float, 3, 1> >]’:
 /usr/include/stdlib.h:539:14: note: in a call to allocation function ‘void* malloc(size_t)’ declared here
  extern void *malloc (size_t __size) __THROW __attribute_malloc__ __wur;
               ^~~~~~
