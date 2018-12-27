@@ -1,7 +1,6 @@
 # This illustrates a warning I get with Eigen
 
 When building relatively simple code with `g++` I get a strange warning that I cannot decipher. The version of my GCC compiler:
-
 ```
 g++ (Ubuntu 7.3.0-27ubuntu1~18.04) 7.3.0
 Copyright (C) 2017 Free Software Foundation, Inc.
@@ -9,8 +8,22 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
+Version of Eigen: 3.3.4
+```c++
+#define EIGEN_WORLD_VERSION 3
+#define EIGEN_MAJOR_VERSION 3
+#define EIGEN_MINOR_VERSION 4
+```
+
 ### Build the code
 
+A short way to reproduce the issue is to just build the code from the terminal:
+```bash
+cd eigen_example
+g++ -I/usr/include/eigen3 -O3 example.cpp
+```
+
+Alternatively, build it with cmake:
 ```bash
 cd eigen_example
 mkdir build
